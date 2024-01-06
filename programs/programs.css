@@ -1,0 +1,308 @@
+html{
+  height: 100%;
+}
+
+body {
+  background-color: #faf9ed;
+  touch-action: manipulation;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px; /* Increase the top padding value to create more space below the header */
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.home {display: flex;}
+
+.logo {
+  width: 120px;
+  height: 65px;
+}
+
+.moon {
+    content: url('https://cdn.glitch.global/78e00b3e-a411-4dbc-96f5-907b2b5a2f20/moon.png?v=1698436506165');
+}
+
+.sun {
+    content: url('https://cdn.glitch.global/78e00b3e-a411-4dbc-96f5-907b2b5a2f20/sun.png?v=16984923943805');
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 20;
+  width: 100%;
+  padding: 20px 100px;
+  background: rgba(246,239,235,0.97);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+
+/* --------------NAVIGATION BAR-------------- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work_with_us {
+    display: flex;
+    align-items: center;
+}
+
+.work_btn {
+    margin-right: 10px; /* Adjust margin for space between the button and the moon icon */
+}
+
+.navbar a {
+  font-size: 18px;
+  font-weight: 900;
+  text-decoration: none;
+  margin-left: 20px;
+  justify-content: space-between;
+}
+
+.programs{color: #FF8DFF; transition: 0.2s;}
+.about {color: #493838; transition: 0.2s;}
+
+.about:hover {color: #5271FF;}
+
+.visible_mode{scale: 0.8; text-shadow: 0px 0px 100px black;
+}
+
+.navbar programs.open{color: #faf9ed;}
+
+body.open{background-color: #0A0D12;}
+
+.header.open{background-color: rgba(30, 36, 48, 1);}
+
+.visible_mode:hover{scale: 1.5;}
+
+.navbar .work_btn {
+  background-color: #ffde59;
+  color: #faf9ed;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.navbar .work_btn:hover {
+  color: #493838;
+  background-color: #faf9ed;
+}
+
+.navbar .dropdown_btn {
+  outline: none;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* --------------DROP DOWN-------------- */
+
+
+.dropdown_menu{
+  display: none;
+  position: absolute;
+  justify-content: center;
+  right: 2rem;
+  top: 84px;
+  width: 200px;
+  z-index: 120;
+  background: rgba(246,239,235,0.9);
+  backdrop-filter: blur(.9px);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 0;
+  transition: 0.2s;
+}
+
+.dropdown_menu li{
+  padding: .55rem;
+  display: flex;
+  justify-content: right;
+}
+
+.dropdown_menu a{
+  font-size: 23px;
+  text-shadow: 0px 0px 50px white;
+  color: #493838;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+
+.dropdown_menu .work_btn{
+  background-color: #ffde59;
+  width: 100%;
+  justify-content: center;
+  color: #faf9ed;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  transition: 0.4s;
+}
+
+.dropdown_menu .work_btn:hover{
+  color: #493838;
+  background-color: #faf9ed;
+}
+
+.dropdown_menu.open{
+  height: 170px;
+}
+
+.interested_btn{
+  padding-top: 25px;
+}
+
+.interested {
+  background-color: #2ACB9A;
+  color: #faf9ed;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.interested:hover {
+  color: #493838;
+  background-color: white;
+}
+
+/* ----------------CONTENT------------------- */
+
+
+.intro{
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 15px;
+}
+
+/* Add this CSS to your existing stylesheet */
+.page-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px; /* Adjust padding as needed */
+
+  /* Ensures responsiveness on smaller screens */
+  flex-wrap: wrap;
+}
+
+.TELLER-section {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.left-section {
+  position: relative;
+  flex: 0 0 40%;
+  margin-right: 20px;
+}
+
+.big-photo {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  border-top-left-radius: 15px; /* Make the top left corner rounded */
+  overflow: hidden;
+}
+
+.right-section {
+  flex: 1;
+  padding: 20px; /* Adjust padding as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+.programBox {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  margin: 0 auto; /* Centers the box horizontally */
+  max-width: 1200px; /* Set the maximum width of the box */
+  padding: 20px; /* Adjust padding as needed */
+  border: 2px solid #493838; /* Border properties */
+  border-radius: 15px; /* This will create a rounded border */
+  background-color: #faf9ed; /* Background color for the box */
+}
+
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #493838; /* Your chosen color */
+}
+
+
+
+/* ------mobile---- */
+@media screen and (max-width: 850px) {
+  .header {padding: 10px 50px; background: rgba(246,239,235,0.97);}
+
+  .navbar a {display: none;}
+
+  .navbar .dropdown_btn {display: block;}
+  .navbar .visible_dark {display: block; font-size: 35px;}
+
+   .dropdown_menu{ display: block;}
+
+  .TELLER-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+
+  .big-photo {
+    width: 100%; /* Ensure the image takes full width */
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+
+  .right-section {
+  text-align: left; /* Align text to the left */
+  }
+
+
+  .intro {
+    padding-top: 0px; /* Remove top padding */
+  }
+
+  body {
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+    padding-top: 100px; /* Increase the top padding value to create more space below the header */
+  }
+}
