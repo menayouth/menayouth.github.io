@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="icon" href="https://cdn.glitch.global/78e00b3e-a411-4dbc-96f5-907b2b5a2f20/whitetransparent2.png?v=1693075454545" />
+  <title>| our programs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="stylesheet" href="programs.css" />
+</head>
+
+ <header class="header">
+      <a href="https://menayouth.glitch.me/">
+        <img
+          href="#"
+          class="logo"
+          src="https://cdn.glitch.global/78e00b3e-a411-4dbc-96f5-907b2b5a2f20/menayouthimprint.png?v=1693079226788"/>
+      </a>
+
+      <!---------------- NAVIGATION BAR ----------------->
+
+      <nav class="navbar">
+        <a class="about" href="./about/about">about</a>
+        <a class="programs" href="./programs/programs">programs</a>
+        <div class="work_with_us">
+          <a href="./contact/contact" class="work_btn"
+            >work with us</a
+          >
+          <a id="darkmode" class="visible_dark">
+            <img
+              id="darkmode-img"
+              src="https://cdn.glitch.global/78e00b3e-a411-4dbc-96f5-907b2b5a2f20/moon.png?v=1698436506165"
+              width="30"
+              height="30"
+            />
+          </a>
+        </div>
+        <div class="dropdown_btn">
+          <img
+            id="dropdown-img"
+            src="https://cdn.glitch.global/78e00b3e-a411-4dbc-96f5-907b2b5a2f20/burger.png?v=1704497902267"
+            width="40"
+            height="40"
+          />
+        </div>
+      </nav>
+
+      <!---------------- DROP DOWN MENU ----------------->
+
+      <div class="dropdown_menu">
+        <li><a class="about" href="./about/about">about</a></li>
+        <li><a class="programs" href="./programs/programs">programs</a></li>
+        <li><a href="./contact/contact"
+           class="work_btn">work with us</a></li>
+       </div>
+    </header>
+
+<body>
+
+<div class="page-content">
+  <div class="programBox">
+    <div class="TELLER-section">
+      <div class="left-section">
+        <!-- Big photo on the left side -->
+        <img src="https://cdn.glitch.global/78e00b3e-a411-4dbc-96f5-907b2b5a2f20/tellerLOGO.png?v=1704233756567"
+             alt="Big Photo" class="big-photo" />
+      </div>
+      <div class="right-section">
+        <!-- Larger Logo --> <!--  <img src="path_to_your_larger_logo_image" alt="Big Logo" class="logo-big" />-->
+
+        <!-- Existing text content -->
+        <p class="intro">
+          MENA Youth is a non-profit organization that encourages embodying the cultural coolness present in the Middle Eastern and North African youth.
+        </p>
+        <p>
+          MENA Youth educates the youth on various topics, such as art, culture, education, entrepreneurship, health, social issues, and more.
+        </p>
+        <div class="interested_btn">
+          <a href="https://menayouth.glitch.me/contact/contact.html" class="interested">interested in joining?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <script>
+      const dropdownBtn = document.querySelector(".dropdown_btn");
+      const dropdownMenu = document.querySelector(".dropdown_menu");
+
+      const body = document.querySelector("body");
+
+      const header = document.querySelector(".header");
+      const a_nav = document.querySelector(".navbar a");
+
+      const darkmode = document.getElementById("darkmode");
+      const darkmodeImg = document.getElementById("darkmode-img");
+      const dropdownimg = document.getElementById("dropdown-img")
+      let isMoon = true;
+      let menueClose = true;
+
+
+      darkmode.onclick = function () {
+        body.classList.toggle("open");
+        header.classList.toggle("open");
+        a_nav.classList.toggle("open");
+
+
+       if (isMoon) {
+          darkmodeImg.src =
+            "https://cdn.glitch.global/78e00b3e-a411-4dbc-96f5-907b2b5a2f20/sun.png?v=16984923943805";
+            document.querySelector(".programs").style.color = "#faf9ed";
+
+        } else {
+          darkmodeImg.src =
+            "https://cdn.glitch.global/78e00b3e-a411-4dbc-96f5-907b2b5a2f20/moon.png?v=1698436506165";
+            document.querySelector(".programs").style.color = "#493838";
+
+        }
+        isMoon = !isMoon;
+      };
+
+      dropdownBtn.onclick = function () {
+        dropdownMenu.classList.toggle("open");
+
+        if (menueClose) {
+          dropdownimg.src =
+            "https://cdn.glitch.global/78e00b3e-a411-4dbc-96f5-907b2b5a2f20/close.png?v=1704497903383";
+          dropdownimg.height = "40"
+          dropdownimg.width = "40"
+        } else {
+          dropdownimg.src =
+            "https://cdn.glitch.global/78e00b3e-a411-4dbc-96f5-907b2b5a2f20/burger.png?v=1704497902267";
+          dropdownimg.height = "40"
+          dropdownimg.width = "40"
+        }
+
+        menueClose = !menueClose;
+      };
+    </script>
+</body>
+</html>
