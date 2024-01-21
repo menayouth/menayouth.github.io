@@ -44,6 +44,7 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  border-bottom: 1.2px solid gray;
 }
 
 
