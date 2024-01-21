@@ -81,6 +81,14 @@ body {
 .visible_mode{scale: 0.8; text-shadow: 0px 0px 100px black;
 }
 
+.visible_dark{
+  transition: 0.2s;
+}
+
+.visible_dark:hover{
+  scale: 1.08;
+}
+
 .navbar a.open{color: #faf9ed;}
 
 body.open{background-color: #0A0D12;}
