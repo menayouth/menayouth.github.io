@@ -360,7 +360,7 @@ body {
   padding-top: 30px; /* Increase the top padding value to create more space below the header */
 }
 
-  .header {padding: 10px 50px; background: rgba(246,239,235,0.97);}
+  .header {padding: 10px 20px; background: rgba(246,239,235,0.97);  height: 75px;}
 
   .navbar a {display: none;}
 
@@ -368,6 +368,9 @@ body {
   .navbar .visible_dark {display: block; font-size: 35px;}
 
   .logo {width: 90px; height: 50px;}
+
+  .visible_dark {margin-right: 10px;}
+
 
   .dropdown_menu{ display: block;}
 

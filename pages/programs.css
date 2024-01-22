@@ -365,7 +365,7 @@ p {
 
 /* ------mobile---- */
 @media screen and (max-width: 850px) {
-  .header {padding: 10px 50px; background: rgba(246,239,235,0.97);}
+  .header {padding: 10px 20px; background: rgba(246,239,235,0.97);  height: 75px;}
 
   .navbar a {display: none;}
 
@@ -390,6 +390,9 @@ p {
     margin-bottom: 20px;
     padding-left: 20px;
   }
+
+  .visible_dark {margin-right: 10px;}
+
 
   .right-section {
   text-align: left; /* Align text to the left */
