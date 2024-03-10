@@ -1,391 +1,264 @@
 html{
-    height: 100%;
-  }
-  
-  body {
-    background-color: #faf9ed;
-    touch-action: manipulation;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  .home {display: flex;}
-  
-  .logo {
-    width: 120px;
-    height: 65px;
-  }
-  
-  .moon {
-      content: url('https://cdn.glitch.global/78e00b3e-a411-4dbc-96f5-907b2b5a2f20/moon.png?v=1698436506165');
-  }
-  
-  .sun {
-      content: url('https://cdn.glitch.global/78e00b3e-a411-4dbc-96f5-907b2b5a2f20/sun.png?v=16984923943805');
-  }
-  
-  .header{
-    position: fixed;
-    top: 0;
-    left: 20;
-    width: 100%;
-    height: 90px;
-    padding: 20px 100px;
-    background: rgba(246,239,235,0.97);
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  touch-action: manipulation;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.home {display: flex;}
+
+.logo {
+  width: 75px;
+  height: 65px;
+}
+
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 20;
+  width: 100%;
+  height: 90px;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-image: linear-gradient(#061826, rgba(255,0,0,0));
+}
+
+
+/* --------------NAVIGATION BAR-------------- */
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
-    border-bottom: 1.2px solid gray;
-  }
-  
-  
-  /* --------------NAVIGATION BAR-------------- */
-  
-  .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }
-  
-  .work_with_us {
-      display: flex;
-      align-items: center;
-  }
-  
-  .work_btn {
-      margin-right: 10px; /* Adjust margin for space between the button and the moon icon */
-  }
-  
-  .navbar a {
-    font-size: 18px;
-    color: #493838;
-    font-weight: 900;
-    text-decoration: none;
-    margin-left: 20px;
-    justify-content: space-between;
-  }
-  
-  .about:hover {color: #5271FF; transition: 0.2s;}
-  
-  .programs:hover {color: #FF8DFF; transition: 0.2s;}
-  
-  .visible_mode{scale: 0.8; text-shadow: 0px 0px 100px black;
-  }
-  
-  .visible_dark{
-    transition: 0.2s;
-  }
-  
-  .visible_dark:hover{
-    scale: 1.08;
-  }
-  
-  .navbar a.open{color: #faf9ed;}
-  
-  body.open{background-color: #0A0D12;}
-  
-  .header.open{background-color: rgba(30, 36, 48, 1);}
-  
-  .visible_mode:hover{scale: 1.5;}
-  
-  .navbar .work_btn {
-    background-color: #ffde59;
-    color: #faf9ed;
-    padding: 0.5rem 1rem;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.4s;
-  }
-  
-  .navbar .work_btn:hover {
-    color: #493838;
-    background-color: #faf9ed;
-  }
-  
-  .navbar .dropdown_btn {
-    outline: none;
-    font-size: 2rem;
-    cursor: pointer;
-    display: none;
-  }
-  
-  /* --------------DROP DOWN-------------- */
-  
-  
-  .dropdown_menu{
-    display: none;
-    position: absolute;
-    justify-content: center;
-    right: 2rem;
-    top: 84px;
-    width: 200px;
-    z-index: 120;
-    background: rgba(246,239,235,0.9);
-    backdrop-filter: blur(.9px);
-    border-radius: 10px;
-    overflow: hidden;
-    height: 0;
-    transition: 0.2s;
-  }
-  
-  .dropdown_menu li{
-    padding: .55rem;
+}
+
+.work_with_us {
     display: flex;
-    justify-content: right;
-  }
-  
-  .dropdown_menu a{
-    font-size: 23px;
-    text-shadow: 0px 0px 50px white;
-    color: #493838;
-    font-weight: 900;
-    text-decoration: none;
-  }
-  
-  
-  .dropdown_menu .work_btn{
-    background-color: #ffde59;
-    width: 100%;
-    justify-content: center;
-    color: #faf9ed;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    display: flex;
-    transition: 0.4s;
-  }
-  
-  .dropdown_menu .work_btn:hover{
-    color: #493838;
-    background-color: #faf9ed;
-  }
-  
-  .dropdown_menu.open{
-    height: 170px;
-  }
-  
-  
-  /*--------------------- FOOTER --------------------------*/
-  
-  .logofoot {
-    display: flex;
-    justify-content: center;
-  }
-  
-  
-  .footer{
-    background-color: #0D1119;
-    padding: 20px;
-    width: 100%;
-    margin-top: auto;
-      text-align: center;
-  
-    z-index: 120;
-    list-style-type: disc;
-  }
-  
-  
-  .footer .social{
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .footer .social .instagram{padding: 12px; transition: 0.34s;}
-  .footer .social .facebook{padding: 12px; transition: 0.34s;}
-  .footer .social .linkedin{padding: 12px; transition: 0.34s;}
-  .footer .social .tiktok{padding: 12px; transition: 0.34s;}
-  .footer .social .linktree{padding: 12px; transition: 0.34s;}
-  
-  
-  
-  .footer .social .instagram:hover{transform: scale(1.2);}
-  .footer .social .facebook:hover{transform: scale(1.2);}
-  .footer .social .linkedin:hover{transform: scale(1.2);}
-  .footer .social .tiktok:hover{transform: scale(1.2);}
-  .footer .social .linktree:hover{transform: scale(1.2);}
-  
-  
-  .footer .copyright{
-    font-size: 10px;
-    color: white;
-    font-weight: 10;
-    opacity: .5;
+    align-items: center;
+}
+
+.work_btn {
+    margin-right: 10px; /* Adjust margin for space between the button and the moon icon */
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #493838;
+  font-weight: 900;
+  text-decoration: none;
+  margin-left: 20px;
+  justify-content: space-between;
+  background-color: #E5E5E5;
+  color: black;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.about:hover {color: white; transition: 0.2s; border-bottom: 1.2px solid gray; background-color: black;}
+
+.programs:hover {color: white; transition: 0.2s; border-bottom: 1.2px solid gray; background-color: black;}
+
+.visible_mode{scale: 0.8; text-shadow: 0px 0px 100px black;
+}
+
+.visible_dark{
+  transition: 0.2s;
+}
+
+.visible_dark:hover{
+  scale: 1.08;
+}
+
+.navbar a.open{color: #faf9ed;}
+
+body.open{background-color: #0A0D12;}
+
+.header.open{background-color: rgba(30, 36, 48, 1);}
+
+.visible_mode:hover{scale: 1.5;}
+
+.navbar .work_btn {
+  background-color: #F2DC5D;
+  color: black;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.navbar .work_btn:hover {
+  color: black;
+  background-color: #faf9ed;
+}
+
+.navbar .dropdown_btn {
+  outline: none;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* --------------DROP DOWN-------------- */
+
+
+.dropdown_menu{
+  display: none;
+  position: absolute;
+  justify-content: center;
+  right: 2rem;
+  top: 84px;
+  width: 200px;
+  z-index: 120;
+  background: rgba(246,239,235,0.9);
+  backdrop-filter: blur(.9px);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 0;
+  transition: 0.2s;
+}
+
+.dropdown_menu li{
+  padding: .55rem;
+  display: flex;
+  justify-content: right;
+}
+
+.dropdown_menu a{
+  font-size: 23px;
+  text-shadow: 0px 0px 50px white;
+  color: #493838;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+
+.dropdown_menu .work_btn{
+  background-color: #ffde59;
+  width: 100%;
+  justify-content: center;
+  color: #faf9ed;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  transition: 0.4s;
+}
+
+.dropdown_menu .work_btn:hover{
+  color: #493838;
+  background-color: #faf9ed;
+}
+
+.dropdown_menu.open{
+  height: 170px;
+}
+
+
+/*--------------------- FOOTER --------------------------*/
+
+.logofoot {
+  display: flex;
+  justify-content: center;
+}
+
+
+.footer{
+  background-color: #0D1119;
+  padding: 20px;
+  width: 100%;
+  margin-top: auto;
     text-align: center;
-  }
-  
-  
-  /* ------------------IMAGE GRID (POSTS)------------------ */
-  
-  .imgGrid {
-    /* setting vars */
-    --gap: 16px; /* gap between photos */
-    --num-col: 3; /*#number of collums */
-    --row-height: fixed; /*#height of photo */
-    margin-bottom: auto;
-  
-    /* border-box doenst make the photo bigger than the padding */
-    box-sizing: border-box;
-    padding: 100px;
-    padding-top: 110px;
-    border-radius: 8px;
-  
-    /* grid aslignment */
-    display: grid;
-    grid-template-columns: repeat(
-      var(--num-col),
-      1fr
-    ); /* 4 columns = 1 grid line */
-    grid-auto-rows: var(--row-height);
-  
-    gap: var(--gap); /* gap between pics */
-  }
-  
-  
-  
-  /* ------------------POST IMAGAES------------------ */
-  
-  
-  .imgGrid > img {object-fit: cover;}
-  
-  
-  .normalpic.open{
-    border-radius: 10px;
-    border: 2px solid #faf9ed;
-    transition: 0.4s;
-    box-shadow: 0px 0px 10px black;
-  }
-  
-  
-  .normalpic {
-    border-radius: 10px;
-    border: 2px solid black;
-    transition: 0.4s;
-    box-shadow: 0px 0px 10px black;
-  }
-  .productions {
-    border-radius: 10px;
-    border: 2px solid #faf9ed;
-    transition: 0.4s;
-    box-shadow: 0px 0px 10px black;
-  }
-  
-  
-  .normalpic:hover {
-    border-radius: 10px;
-    transform: scale(1.03);
-    z-index: 2;
-  }
-  .productions:hover {
-    border-radius: 10px;
-    transform: scale(1.03);
-    z-index: 2;
-  }
-  
-  
-  
-  /* ------------------SMALLER SCREEN SIZES------------------ */
-  
-  /* ------tablets---- */
-  @media screen and (max-width: 800px) {
-  
-    .imgGrid {
-      --num-col: 2;
-      top: 100px;
-      padding: var(--gap);
-      padding-top: 120px;
-    }
-  
-    .header {
-      padding: 10px 50px;
-      background: rgba(246,239,235,0.97);
-    }
-  
-    .normalpic {
-    width: 100%;
-    height: 100%;
-    transition: 0.4s;
-  }
-  .productions {
-    width: 100%;
-    height: 100%;
-    transition: 0.4s;
-  }
-  
-  
-  
-  }
-  
-  
-  /* ------mobile---- */
-  @media screen and (max-width: 700px) {
-  
-  .imgGrid {
-    position: sticky;
-    top: 40px;
-    align-items: center;
-    gap: 16px;
-    --num-col: 1;
-    padding: 55px;
-    bottom: 80px;
-    }
-  
-  .normalpic {
-    width: 100%;
-    height: 100%;
-    transition: 0.4s;
-  }
-  
-  .productions {
-    width: 100%;
-    height: 100%;
-    transition: 0.4s;
-  }
-  
-  body {
-    padding-top: 30px; /* Increase the top padding value to create more space below the header */
-  }
-  
-    .header {padding: 10px 20px; background: rgba(246,239,235,0.97);  height: 75px;}
-  
-    .navbar a {display: none;}
-  
-    .navbar .dropdown_btn {display: block;}
-    .navbar .visible_dark {display: block; font-size: 35px;}
-  
-    .logo {width: 90px; height: 50px;}
-  
-    .visible_dark {margin-right: 10px;}
-  
-  
-    .dropdown_menu{ display: block;}
-  
-  
-  
-  
-  .footer .social .instagram{padding: 10px; transition: 0.34s;}
-  .footer .social .facebook{padding: 10px; transition: 0.34s;}
-  .footer .social .linkedin{padding: 10px; transition: 0.34s;}
-  .footer .social .tiktok{padding: 10px; transition: 0.34s;}
-  .footer .social .linktree{padding: 10px; transition: 0.34s;}
-  
-  
-  
-  
-  
-  
-  }
-  
+
+  z-index: 120;
+  list-style-type: disc;
+}
+
+
+.footer .social{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer .social .instagram{padding: 12px; transition: 0.34s;}
+.footer .social .facebook{padding: 12px; transition: 0.34s;}
+.footer .social .linkedin{padding: 12px; transition: 0.34s;}
+.footer .social .tiktok{padding: 12px; transition: 0.34s;}
+.footer .social .linktree{padding: 12px; transition: 0.34s;}
+
+
+
+.footer .social .instagram:hover{transform: scale(1.2);}
+.footer .social .facebook:hover{transform: scale(1.2);}
+.footer .social .linkedin:hover{transform: scale(1.2);}
+.footer .social .tiktok:hover{transform: scale(1.2);}
+.footer .social .linktree:hover{transform: scale(1.2);}
+
+
+.footer .copyright{
+  font-size: 10px;
+  color: white;
+  font-weight: 10;
+  opacity: .5;
+  text-align: center;
+}
+
+
+
+
+
+/* ------mobile---- */
+@media screen and (max-width: 700px) {
+
+body {
+  padding-top: 30px; /* Increase the top padding value to create more space below the header */
+}
+
+  .header {padding: 10px 20px; background: rgba(246,239,235,0.97);  height: 75px;}
+
+  .navbar a {display: none;}
+
+  .navbar .dropdown_btn {display: block;}
+  .navbar .visible_dark {display: block; font-size: 35px;}
+
+  .logo {width: 90px; height: 50px;}
+
+  .visible_dark {margin-right: 10px;}
+
+
+  .dropdown_menu{ display: block;}
+
+
+
+
+.footer .social .instagram{padding: 10px; transition: 0.34s;}
+.footer .social .facebook{padding: 10px; transition: 0.34s;}
+.footer .social .linkedin{padding: 10px; transition: 0.34s;}
+.footer .social .tiktok{padding: 10px; transition: 0.34s;}
+.footer .social .linktree{padding: 10px; transition: 0.34s;}
+}
