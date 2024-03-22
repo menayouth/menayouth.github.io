@@ -87,24 +87,21 @@ body {
 .navbar .about:hover {transform: translateY(-2px);}
 .navbar .programs:hover {color: #FF8DFF; transform: translateY(-2px);}
 
-.visible_mode{scale: 0.8; text-shadow: 0px 0px 100px black;
-}
+.visible_mode{scale: 0.8; text-shadow: 0px 0px 100px black;}
 
 .visible_dark{
   transition: 0.2s;
 }
-
 .visible_dark:hover{
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
+.visible_mode:hover{transform: translateY(-2px);}
 
 .navbar programs.open{color: #faf9ed;}
 
 body.open{background-color: #0A0D12;}
 
 .header.open{background-color: rgba(30, 36, 48, 1);}
-
-.visible_mode:hover{scale: 1.5;}
 
 .navbar .work_btn {
   background-color: #ffde59;

@@ -96,16 +96,18 @@ body {
 }
 
 .visible_dark:hover{
-  scale: 1.08;
+  transform: translateY(-2px);
 }
 
-.navbar programs.open{color: #faf9ed;}
+.visible_mode:hover{transform: translateY(-2px);}
+
+
+.navbar .programs.open{color: #faf9ed;}
 
 body.open{background-color: #0A0D12;}
 
 .header.open{background-color: rgba(30, 36, 48, 1);}
 
-.visible_mode:hover{scale: 1.5;}
 
 .navbar .work_btn {
   background-color: #ffde59;

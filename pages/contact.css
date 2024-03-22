@@ -48,9 +48,9 @@
 .about{transition: 0.2s;}
 .programs{transition: 0.2s;}
 
-.about:hover {color: #5271FF;}
+.about:hover {color: #5271FF; transform: translateY(-2px);}
 
-.programs:hover {color: #FF8DFF;}
+.programs:hover {color: #FF8DFF; transform: translateY(-2px);}
 
 .visible_mode{scale: 0.8; text-shadow: 0px 0px 100px black;
 }
@@ -66,8 +66,10 @@ body.open{background-color: #0A0D12;}
   }
   
   .visible_dark:hover{
-	transform: translateY(-3px);
+	transform: translateY(-2px);
   }
+  
+  .visible_mode:hover{transform: translateY(-2px);}
 
 .navbar .work_btn {
   background-color: #ffde59;
