@@ -22,10 +22,10 @@ body {
 .home {display: flex;}
 
 .logo {
-	width: 120px;
-	height: 65px;
-	transition: .6s;
-  }
+  width: 120px;
+  height: 65px;
+  transition: .3s;
+}
   
 .logo:hover{
 	scale: 1.03;
