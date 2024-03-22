@@ -81,9 +81,8 @@ body {
   transition: 0.2s;
 }
 
-.navbar .about:hover {color: #5271FF; transform: translateY(-3px);}
-
-.navrbar .programs:hover {color: #FF8DFF; transform: translateY(-3px);}
+.navbar .about:hover {color: #5271FF; transform: translateY(-2px);}
+.navbar .programs:hover {color: #FF8DFF; transform: translateY(-2px);}
 
 .visible_mode{scale: 0.8; text-shadow: 0px 0px 100px black;
 }
