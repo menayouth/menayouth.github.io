@@ -24,6 +24,12 @@ body {
   height: 65px;
 }
 
+
+.logo:hover{
+  scale: 1.03;
+}
+
+
 .moon {
     content: url('https://cdn.glitch.global/78e00b3e-a411-4dbc-96f5-907b2b5a2f20/moon.png?v=1698436506165');
 }
@@ -199,24 +205,25 @@ body.open{background-color: #0A0D12;}
 
 
 .footer .social{
+  margin-top: 5px;
   text-decoration: none;
   display: flex;
   justify-content: center;
 }
 
-.footer .social .instagram{padding: 12px; transition: 0.34s;}
-.footer .social .facebook{padding: 12px; transition: 0.34s;}
-.footer .social .linkedin{padding: 12px; transition: 0.34s;}
-.footer .social .tiktok{padding: 12px; transition: 0.34s;}
-.footer .social .linktree{padding: 12px; transition: 0.34s;}
+.footer .social .instagram{opacity: .8; padding: 12px; transition: 0.3s;}
+.footer .social .facebook{opacity: .8; padding: 12px; transition: 0.3s;}
+.footer .social .linkedin{opacity: .8; padding: 12px; transition: 0.3s;}
+.footer .social .tiktok{opacity: .8; padding: 12px; transition: 0.3s;}
+.footer .social .linktree{opacity: .8; padding: 12px; transition: 0.3s;}
 
 
 
-.footer .social .instagram:hover{transform: scale(1.2);}
-.footer .social .facebook:hover{transform: scale(1.2);}
-.footer .social .linkedin:hover{transform: scale(1.2);}
-.footer .social .tiktok:hover{transform: scale(1.2);}
-.footer .social .linktree:hover{transform: scale(1.2);}
+.footer .social .instagram:hover{opacity: 1; 	transform: translateY(-5px);}
+.footer .social .facebook:hover{opacity: 1; transform: translateY(-5px);}
+.footer .social .linkedin:hover{opacity: 1; transform: translateY(-5px);}
+.footer .social .tiktok:hover{opacity: 1; transform: translateY(-5px);}
+.footer .social .linktree:hover{opacity: 1; transform: translateY(-5px);}
 
 
 .footer .copyright{

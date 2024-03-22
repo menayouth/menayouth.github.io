@@ -8,9 +8,15 @@
 
 
 .logo {
-  width: 120px;
-  height: 65px;
-}
+	width: 120px;
+	height: 65px;
+	transition: .6s;
+  }
+  
+.logo:hover{
+	scale: 1.03;
+  }
+  
 
 .header{
   position: fixed;

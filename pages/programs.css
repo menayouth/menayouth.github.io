@@ -22,9 +22,14 @@ body {
 .home {display: flex;}
 
 .logo {
-  width: 120px;
-  height: 65px;
-}
+	width: 120px;
+	height: 65px;
+	transition: .6s;
+  }
+  
+.logo:hover{
+	scale: 1.03;
+  }
 
 .moon {
     content: url('https://cdn.glitch.global/78e00b3e-a411-4dbc-96f5-907b2b5a2f20/moon.png?v=1698436506165');
@@ -318,6 +323,7 @@ p {
 .footer .social{
   text-decoration: none;
   display: flex;
+  margin-top: 5px;
   justify-content: center;
 }
 
@@ -329,11 +335,11 @@ p {
 
 
 
-.footer .social .instagram:hover{opacity: 1; transform: scale(1.1);}
-.footer .social .facebook:hover{opacity: 1; transform: scale(1.1);}
-.footer .social .linkedin:hover{opacity: 1; transform: scale(1.1);}
-.footer .social .tiktok:hover{opacity: 1; transform: scale(1.1);}
-.footer .social .linktree:hover{opacity: 1; transform: scale(1.1);}
+.footer .social .instagram:hover{opacity: 1; 	transform: translateY(-5px);}
+.footer .social .facebook:hover{opacity: 1; transform: translateY(-5px);}
+.footer .social .linkedin:hover{opacity: 1; transform: translateY(-5px);}
+.footer .social .tiktok:hover{opacity: 1; transform: translateY(-5px);}
+.footer .social .linktree:hover{opacity: 1; transform: translateY(-5px);}
 
 
 .footer .copyright{
