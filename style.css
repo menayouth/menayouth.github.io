@@ -93,7 +93,7 @@ body {
 }
 
 .visible_dark:hover{
-  scale: 1.08;
+  transform: translateY(-3px);
 }
 
 .navbar a.open{color: #faf9ed;}

@@ -22,12 +22,10 @@ const dropdownBtn = document.querySelector(".dropdown_btn");
        if (isMoon) {
           darkmodeImg.src =
             "https://cdn.glitch.global/78e00b3e-a411-4dbc-96f5-907b2b5a2f20/sun.png?v=16984923943805";
-            document.querySelector(".programs").style.color = "#faf9ed";
 
         } else {
           darkmodeImg.src =
             "https://cdn.glitch.global/78e00b3e-a411-4dbc-96f5-907b2b5a2f20/moon.png?v=1698436506165";
-            document.querySelector(".programs").style.color = "#493838";
 
         }
         isMoon = !isMoon;
