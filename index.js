@@ -4,7 +4,7 @@ const dropdownBtn = document.querySelector(".dropdown_btn");
       const body = document.querySelector("body");
 
       const header = document.querySelector(".header");
-      const a_nav = document.querySelector(".navbar a");
+      const a_nav = document.querySelector(".navbar");
 
       const darkmode = document.getElementById("darkmode");
       const darkmodeImg = document.getElementById("darkmode-img");

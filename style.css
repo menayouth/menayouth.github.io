@@ -95,7 +95,7 @@ body {
 }
 .visible_mode:hover{transform: translateY(-2px);}
 
-.navbar a.open{color: #faf9ed;}
+.navbar.open{color: #faf9ed;}
 
 body.open{background-color: #0A0D12;}
 
