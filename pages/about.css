@@ -94,7 +94,7 @@ body {
 }
 .visible_dark:hover{
   transform: translateY(-2px); scale: 1.014;}
-}
+
 
 .visible_mode:hover{transform: translateY(-2px);}
 
