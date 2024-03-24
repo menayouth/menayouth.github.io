@@ -278,7 +278,7 @@ body.open{background-color: #0A0D12;}
   flex: 1;
   border: 2px solid #493838; /* Border properties */
   border-radius: 15px; /* This will create a rounded border */
-  padding: 20px; /* Adjust padding as needed */
+  padding: 15px; /* Adjust padding as needed */
   background-color: #faf9ed; /* Background color for the box */
 }
 
