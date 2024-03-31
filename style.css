@@ -291,6 +291,7 @@ body.open{background-color: #0A0D12;}
   border-radius: 10px;
   transform: scale(1.011);
   z-index: 2;
+  opacity: 0.75;
 }
 
 
