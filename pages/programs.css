@@ -82,7 +82,7 @@ body {
 }
 
 .programs{color: #FF8DFF; transition: 0.2s;}
-.about {color: #493838; transition: 0.2s;}
+.about{color: #493838; transition: 0.2s;}
 
 
 .navbar .about:hover {color: #5271FF; transform: translateY(-2px);}
@@ -101,11 +101,8 @@ body {
 
 .visible_mode:hover{transform: translateY(-2px);}
 
-
-.navbar .programs.open{color: #faf9ed;}
-
+.navbar about.open{color: #faf9ed;}
 body.open{background-color: #0A0D12;}
-
 .header.open{background-color: rgba(30, 36, 48, 1);}
 
 

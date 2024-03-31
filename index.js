@@ -4,8 +4,8 @@ const dropdownBtn = document.querySelector(".dropdown_btn");
       const body = document.querySelector("body");
 
       const header = document.querySelector(".header");
-      const about = document.querySelector(".about");
-      const programs = document.querySelector(".programs");
+      const about = document.querySelector("about");
+      const programs = document.querySelector("programs");
 
 
       const darkmode = document.getElementById("darkmode");
