@@ -7,6 +7,7 @@ const dropdownBtn = document.querySelector(".dropdown_btn");
       const about = document.querySelector("about");
       const programs = document.querySelector("programs");
 
+      const navbar = document.querySelector(".navbar");
 
       const darkmode = document.getElementById("darkmode");
       const darkmodeImg = document.getElementById("darkmode-img");
@@ -19,9 +20,8 @@ const dropdownBtn = document.querySelector(".dropdown_btn");
 
         body.classList.toggle("open");
         header.classList.toggle("open");
-        about.classList.toggle("open");
-        programs.classList.toggle("open");
         
+        navbar.classList.toggle("open");
 
        if (isMoon) {
           darkmodeImg.src =
