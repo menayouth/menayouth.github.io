@@ -45,17 +45,18 @@
 }
 
 
-.about{transition: 0.2s;}
-.programs{transition: 0.2s;}
+.navbar .programs{color: #faf9ed; transition: 0.2s;}
+.navbar .about{color: #faf9ed; transition: 0.2s;}
+.navbar .published{color: #faf9ed; transition: 0.2s;}
 
-.about:hover {color: #5271FF; transform: translateY(-2px);}
 
-.programs:hover {color: #FF8DFF; transform: translateY(-2px);}
+.navbar .about:hover {color: #5271FF; transform: translateY(-2px);}
+.navbar .programs:hover {color: #FF8DFF; transform: translateY(-2px);}
+.navbar .published:hover {color: #2ACB9A; transform: translateY(-2px);}
 
 .visible_mode{scale: 0.8; text-shadow: 0px 0px 100px black;
 }
 
-.navbar a.open{color: #faf9ed;}
 
 body.open{background-color: #0A0D12;}
 

@@ -81,12 +81,15 @@ body {
   transition: 0.2s;
 }
 
-.programs{color: #FF8DFF; transition: 0.2s;}
-.about{color: #493838; transition: 0.2s;}
+.navbar .programs{color: #FF8DFF; transition: 0.2s;}
+.navbar .about{color: #493838; transition: 0.2s;}
+.navbar .published{color: #493838; transition: 0.2s;}
 
 
 .navbar .about:hover {color: #5271FF; transform: translateY(-2px);}
-.navbar .programs:hover {transform: translateY(-2px);}
+  
+.navbar .published:hover {color: #2ACB9A; transform: translateY(-2px);}
+  
 
 .visible_mode{scale: 0.8; text-shadow: 0px 0px 100px black;
 }
