@@ -81,14 +81,14 @@ body {
   transition: 0.2s;
 }
 
-.navbar .programs{color: #493838;}
-.navbar .about {color: #5271FF;}
+.navbar .programs{color: #493838; transition: 0.2s;}
+.navbar .about {color: #5271FF; transition: 0.2s;}
 .navbar .published{color: #493838; transition: 0.2s;}
 
 
 .navbar .programs:hover {color: #FF8DFF; transform: translateY(-2px);}
 
-.navbar .published:hover{color: #2ACB9A;transform: translateY(-2px)}
+.navbar .published:hover{color: #2ACB9A; transform: translateY(-2px)}
 
 
 
