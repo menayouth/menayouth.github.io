@@ -100,7 +100,7 @@ html{
   
   .navbar .work_btn {
     background-color: #ffde59;
-    color: #F6EFEB;
+    color: #493838;
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
@@ -112,7 +112,6 @@ html{
   }
   
   .navbar .work_btn:hover {
-    color: #493838;
     background-color: #faf9ed;
   }
   
@@ -176,23 +175,23 @@ html{
   .dropdown_menu .work_btn{
     background-color: #ffde59;
     width: 100%;
-    justify-content: right;
-    color: #faf9ed;
+    justify-content: center;
+    color: #493838;
     padding: 0.5rem 1rem;
-    border-radius: 13px;
+    border-radius: 20px;
     font-size: 1.2rem;
     cursor: pointer;
     display: flex;
     transition: 0.4s;
+    border: 1.2px solid gray;
   }
   
   .dropdown_menu .work_btn:hover{
-    color: #493838;
     background-color: #faf9ed;
   }
   
   .dropdown_menu.open{
-    height: 180px;
+    height: 190px;
     border: 1.2px solid gray;
   }
   
