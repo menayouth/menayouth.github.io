@@ -100,7 +100,7 @@ html{
   
   .navbar .work_btn {
     background-color: #ffde59;
-    color: #493838;
+    color: #F6EFEB;
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
@@ -108,6 +108,7 @@ html{
     font-size: 1rem;
     cursor: pointer;
     transition: 0.4s;
+    border: 1.2px solid gray;
   }
   
   .navbar .work_btn:hover {

@@ -117,6 +117,7 @@ body.open{background-color: #0A0D12;}
   font-size: 1rem;
   cursor: pointer;
   transition: 0.4s;
+  border: 1.2px solid gray;
 }
 
 .navbar .work_btn:hover {
