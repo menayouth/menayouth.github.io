@@ -142,7 +142,7 @@ body.open{background-color: #0A0D12;}
   justify-content: center;
   right: 2rem;
   top: 84px;
-  width: 200px;
+  width: 207px;
   z-index: 120;
   background: rgba(246,239,235,0.9);
   backdrop-filter: blur(.9px);
@@ -186,7 +186,8 @@ body.open{background-color: #0A0D12;}
 }
 
 .dropdown_menu.open{
-  height: 170px;
+  height: 180px;
+  border: 1.2px solid gray;
 }
 
 .interested_btn{

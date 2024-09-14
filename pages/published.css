@@ -145,7 +145,7 @@ html{
     justify-content: right;
     right: 2rem;
     top: 84px;
-    width: 200px;
+    width: 207px;
     z-index: 120;
     background: rgba(246,239,235,0.9);
     backdrop-filter: blur(.9px);
@@ -191,7 +191,8 @@ html{
   }
   
   .dropdown_menu.open{
-    height: 160px;
+    height: 180px;
+    border: 1.2px solid gray;
   }
   
   
