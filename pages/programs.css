@@ -367,6 +367,12 @@ p {
 
 /* ------mobile---- */
 @media screen and (max-width: 850px) {
+
+  .logo {
+    width: 90px;
+    height: 50px;
+  }
+
   .header {padding: 10px 20px; background: rgba(246,239,235,0.97);  height: 75px;}
 
   .navbar a {display: none;}
