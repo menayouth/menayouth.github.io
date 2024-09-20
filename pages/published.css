@@ -135,14 +135,15 @@ html{
   .navbar .dropdown_btn:hover{
     scale: 1.05;
   }
+    
   
-  /* --------------DROP DOWN-------------- */
-  
-  
+ /* --------------DROP DOWN-------------- */
+
+
   .dropdown_menu{
     display: none;
     position: absolute;
-    justify-content: right;
+    justify-content: center;
     right: 2rem;
     top: 84px;
     width: 207px;
@@ -154,24 +155,22 @@ html{
     height: 0;
     transition: 0.2s;
   }
-  
-  
+
   .dropdown_menu li{
     padding: .55rem;
     display: flex;
     justify-content: right;
   }
-  
+
   .dropdown_menu a{
     font-size: 23px;
     text-shadow: 0px 0px 50px white;
     color: #493838;
     font-weight: 900;
     text-decoration: none;
-    justify-content: right;
   }
-  
-  
+
+
   .dropdown_menu .work_btn{
     background-color: #ffde59;
     width: 100%;
@@ -179,17 +178,17 @@ html{
     color: #493838;
     padding: 0.5rem 1rem;
     border-radius: 20px;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     cursor: pointer;
     display: flex;
     transition: 0.4s;
     border: 1.2px solid gray;
   }
-  
+
   .dropdown_menu .work_btn:hover{
     background-color: #faf9ed;
   }
-  
+
   .dropdown_menu.open{
     height: 190px;
     border: 1.2px solid gray;
